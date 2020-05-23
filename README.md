@@ -1,2 +1,0 @@
-# FartStorm
-Created with CodeSandbox
