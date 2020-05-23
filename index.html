@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1.0, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fart Storm</title>
+    <link type="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <div class="game-name">Fart Storm</div>
+      <div class="game-text">Welcome in Fart Storm</div>
+    </div>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+    <div class="container">
+      <div class="col-left">Column Left</div>
+      <div class="col-mid">Screen</div>
+      <div class="col-right">Column Right</div>
+      <div></div>
+    </div>
 
-<body>
-	<div id="app"></div>
-<h1>hello kitty</h1>
-	<script src="src/index.js">
-	</script>
-</body>
+    <div class="footer">Copyright JJ &copy; 2020</div>
 
+    <button
+      type="button"
+      onclick="document.getElementById('header').style.opacity = 0.8"
+    >
+      Click me
+    </button>
+  </body>
 </html>
