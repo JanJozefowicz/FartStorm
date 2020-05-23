@@ -6,70 +6,66 @@ body {
   margin: 0;
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;
-  color: white;
-}
-
-#p2 {
-  font-family: "Times New Roman", Times, serif;
-  color: yellow;
-}
-
-.color-white {
-  color: white;
-}
-
-.color-yellow {
-  color: yellow;
-}
-
 .header {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   width: max-witdh();
   padding-top: 20px;
-  color: darkgreen;
-  opacity: 0;
+  color: white;
+  opacity: 0.9;
 }
 
 .game-name {
   font-size: 70pt;
-  /* border: 1px solid #ff0000; */
 }
 
 .game-text {
   font-size: 50pt;
-  /* border: 1px solid #ff0000; */
 }
 
 .container {
-  /* width: 1920px; */
   height: 700px;
-  /* border: 1px solid #ff0000; */
+  border: 2px dashed yellow;
 }
 
 .col-left {
-  width: 300px;
-  display: inline-block;
-  /* border: 1px solid #ff0000; */
+  /* width: 300px; */
+  /* border: 0px solid #ff0000; */
+  /* display: inline; */
+  /* float: left; */
 }
 
 .col-mid {
-  width: 1320px;
-  display: inline-block;
-  text-align: center;
+  /* width: 1000px; */
+  /* text-align: center; */
   /* border: 1px solid #ff0000; */
+  /* display: inline; */
+  /* float: left; */
+}
+
+.canvas {
+  display: inline;
+  width: 1000px;
+  height: 600px;
+  background-color: white;
+  border: 1px solid #ff0000;
 }
 
 .col-right {
   /* border: 1px solid #ff0000; */
   /* width: 300px; */
-  display: inline;
+  /* display: inline-block; */
+}
+
+.col-clear {
+  /* clear: both; */
+  /* display: block; */
+  /* border: 1px solid #ff0000; */
 }
 
 .footer {
   font-size: 20pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  border: 2px solid #0000ff;
 }
