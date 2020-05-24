@@ -17,11 +17,14 @@ body {
 
 .game-name {
   font-size: 40pt;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .game-text {
   font-size: 22pt;
   padding-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -47,7 +50,11 @@ body {
   /* border: 3px solid red; */
   padding: 10px;
 }
-
+.player {
+  background-color: #2b52a0;
+  position: absolute;
+  /* display: none; */
+}
 .footer {
   font-size: 20pt;
   font-family: Arial, Helvetica, sans-serif;
@@ -58,11 +65,12 @@ body {
   background-color: #2b52a0;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 22px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 25px;
 }
