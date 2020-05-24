@@ -5,31 +5,57 @@
     <meta name="viewport" content="width=1.0, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Fart Storm</title>
-    <link type="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/game.js"></script>
   </head>
   <body>
     <div class="header" id="header">
-      <div class="game-name">Fart Storm</div>
+      <div class="game-name" id="game-name">Fart Storm</div>
       <div class="game-text">Welcome in Fart Storm</div>
-    </div>
-
-    <div class="container">
-      <div class="col-left">Left</div>
-      <div class="col-mid">
-        Mid
-        <!-- <canvas class="canvas"></canvas> -->
-      </div>
-      <div class="col-right">Right</div>
-      <div class="col-clear"></div>
-    </div>
-
-    <div class="footer">Copyright JJ &copy; 2020</div>
-
-    <button
+      <!-- <button
       type="button"
       onclick="document.getElementById('header').style.opacity = 0.8"
     >
       Click me
-    </button>
+    </button> -->
+
+      <button class="button" onclick="new_game_onclick()">
+        new game
+      </button>
+      <button class="button" onclick="settings_onclick()">settings</button>
+      <button class="button">tutorial</button>
+      <!-- <button class="button button4"></button> -->
+      <!-- <button class="button button5">Black</button> -->
+    </div>
+
+    <div class="container">
+      <div class="center">
+        <!-- <canvas class="canvas"></canvas> -->
+      </div>
+    </div>
+    <script>
+      var game_color;
+      var click_count = 0;
+
+      game_color = document.getElementById("game-name").style.color;
+
+      function new_game_onclick() {
+        click_count += 1;
+        console.log(click_count);
+
+        if (click_count % 2 == 0) {
+          console.log("Equal 2,4,6..");
+          document.getElementById("game-name").style.color = game_color;
+        } else {
+          console.log("Equal 1,3,5..");
+          document.getElementById("game-name").style.color = "black";
+        }
+      }
+
+      function settings_onclick() {
+        document.getElementById("game-name").style.color = game_color;
+      }
+    </script>
+    <div class="footer">Copyright JJ &copy; 2020</div>
   </body>
 </html>
